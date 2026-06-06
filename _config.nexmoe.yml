@@ -1,0 +1,89 @@
+avatar: https://github.com/Delov-s.png
+
+background:
+  path: https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png
+  width: 1280
+  height: 726
+
+homeCover:
+  enable: true
+  image:
+  label: Delov-s.github.io
+  title: Delov's Blog
+  subtitle: 记录开发、折腾与日常笔记
+  description: 基于 Hexo 与 Nexmoe，首页首屏已改成独立封面样式，向下滑动即可进入文章列表。
+  buttonText: 查看文章
+  buttonLink: '#nexmoe-home-main'
+  secondaryText: 关于本站
+  secondaryLink: /about/
+
+favicon:
+  href: https://github.com/Delov-s.png
+  type: image/png
+
+function:
+  globalToc: true
+  wordCount: false
+  copyCode: true
+
+imageCDN:
+  enable: false
+  origin: /images/
+  to:
+
+customStyles:
+  - custom.css
+
+iconlib:
+
+menu:
+  首页:
+    - /
+    - icon-home
+  归档:
+    - /archives/
+    - icon-container
+  关于:
+    - /about/
+    - icon-info-circle
+
+widgets:
+  - name: search
+    enable: true
+    options:
+      search:
+        type: engine
+        url: https://cn.bing.com/search?q=site:delov-s.github.io
+        id:
+  - name: social
+    enable: true
+    options:
+      social:
+        GitHub:
+          - https://github.com/Delov-s
+          - icon-github
+          - rgb(25, 23, 23)
+          - rgba(25, 23, 23, 0.12)
+  - name: category
+    enable: true
+  - name: tagcloud
+    enable: true
+    options:
+      maxTagcloud: 20
+  - name: archive
+    enable: true
+    options:
+      widgetAchive:
+        archive_type: year
+        show_count: true
+  - name: recent_posts
+    enable: true
+
+copyTip: false
+
+slotHead: ''
+slotFooter: ''
+slotSidebar: ''
+slotComment: ''
+slotCopyright: ''
+slotArticleEnd: ''
