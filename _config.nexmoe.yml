@@ -11,7 +11,7 @@ homeCover:
   label: Delov-s.github.io
   title: Delov's Blog
   subtitle: 记录开发、折腾与日常笔记
-  description: 基于 Hexo 与 Nexmoe，首页首屏已改成独立封面样式，向下滑动即可进入文章列表。
+  description: 基于 Hexo 和 Nexmoe 搭建的个人博客，记录技术学习、CTF 复盘和日常折腾。
   buttonText: 查看文章
   buttonLink: '#nexmoe-home-main'
   secondaryText: 关于本站
