@@ -8,6 +8,9 @@ tags:
   - Xposed
   - Hook
 ---
+
+声明：内容来自正己《安卓逆向这档事》
+
 #需要先做一个判断，不然会hook手机里面所有软件
 ```
 if(!loadPackageParam.packageName.equals("包名")){
