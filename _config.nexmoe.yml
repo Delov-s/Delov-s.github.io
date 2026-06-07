@@ -82,7 +82,7 @@ widgets:
 copyTip: false
 
 slotHead: ''
-slotFooter: ''
+slotFooter: '<script src="/js/sakura-petals.js"></script>'
 slotSidebar: ''
 slotComment: ''
 slotCopyright: ''
