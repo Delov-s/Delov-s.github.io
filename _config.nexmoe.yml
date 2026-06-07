@@ -10,8 +10,8 @@ homeCover:
   image:
   label: Delov-s.github.io
   title: Delov's Blog
-  subtitle: 记录开发、折腾与日常笔记
-  description: 基于 Hexo 和 Nexmoe 搭建的个人博客，记录技术学习、CTF 复盘和日常折腾。
+  subtitle: 记录逆向，开发与日常笔记
+  description: ' '
   buttonText: 查看文章
   buttonLink: '#nexmoe-home-main'
   secondaryText: 关于本站
