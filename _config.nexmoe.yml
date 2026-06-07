@@ -1,9 +1,9 @@
 avatar: https://github.com/Delov-s.png
 
 background:
-  path: https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png
-  width: 1280
-  height: 726
+  path: /images/home-cover.jpg
+  width: 1440
+  height: 810
 
 homeCover:
   enable: true
