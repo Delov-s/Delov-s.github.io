@@ -1,35 +1,39 @@
 <!doctype html>
 <html lang="zh"><head>
-<title>文章归档 - Delov&#39;s Blog</title>
+<title>某阅去除开屏广告（版本8.7.5.2） - Delov&#39;s Blog</title>
 <meta charset="UTF-8">
 <meta name="keywords" content="Delov, Hexo, Blog">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
 <link rel="shortcut icon" href="https://github.com/Delov-s.png" type="image/png" />
-<meta name="description" content="记录逆向，开发与日常笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Delov&#39;s Blog">
-<meta property="og:url" content="https://delov-s.github.io/archives/index.html">
+<meta name="description" content="#gpt辅助分析代码 1.先删除广告文件删除okhttp3等相关广告文件 2.定位加载广告的页面先使用MT管理器的Acitivity记录功能，打开软件捕捉到启动页面为com.chaozh.iReader.ui.activity.WelcomeActivity，MT定位搜索，这个apk不能用替换加载界面的方法，替换之后广告确实去掉了但是开屏就是黑屏，也不是设置的广告的加载时间而是根据判断决定是否走广">
+<meta property="og:type" content="article">
+<meta property="og:title" content="某阅去除开屏广告（版本8.7.5.2）">
+<meta property="og:url" content="https://delov-s.github.io/2026/06/08/ireader-remove-splash-ad-8-7-5-2/index.html">
 <meta property="og:site_name" content="Delov&#39;s Blog">
-<meta property="og:description" content="记录逆向，开发与日常笔记">
+<meta property="og:description" content="#gpt辅助分析代码 1.先删除广告文件删除okhttp3等相关广告文件 2.定位加载广告的页面先使用MT管理器的Acitivity记录功能，打开软件捕捉到启动页面为com.chaozh.iReader.ui.activity.WelcomeActivity，MT定位搜索，这个apk不能用替换加载界面的方法，替换之后广告确实去掉了但是开屏就是黑屏，也不是设置的广告的加载时间而是根据判断决定是否走广">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-06-08T13:16:14.000Z">
+<meta property="article:modified_time" content="2026-06-08T13:31:23.673Z">
 <meta property="article:author" content="Delov">
-<meta property="article:tag" content="Delov, Hexo, Blog">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="去广告">
+<meta property="article:tag" content="逆向">
 <meta name="twitter:card" content="summary">
 
 <link rel="stylesheet" href="/lib/fancybox/fancybox.css">
 <link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
 
-<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1780925509898">
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1780925509891">
 
-<link rel="stylesheet" href="/css/style.css?v=1780925509898">
+<link rel="stylesheet" href="/css/style.css?v=1780925509891">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1780925509898">
+        <link rel="stylesheet" href="/custom.css?v=1780925509891">
     
 
 
@@ -39,7 +43,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1780925509898"></script>
+<script async src="/js/app.js?v=1780925509891"></script>
 
  
 
@@ -66,7 +70,7 @@
             </div>
         </a>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple true" href="/archives/" title="归档">
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archives/" title="归档">
             <i class="mdui-list-item-icon nexmoefont icon-container"></i>
             <div class="mdui-list-item-content">
                 归档
@@ -212,18 +216,16 @@
         & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
         
     </div>
-</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><section class="nexmoe-home-cover"><div class="nexmoe-home-cover__frame"><img class="nexmoe-home-cover__image" src="/images/home-cover.jpg" alt="Delov&#039;s Blog" loading="eager"><div class="nexmoe-home-cover__shade"></div><div class="nexmoe-home-cover__content"><p class="nexmoe-home-cover__label">Delov-s.github.io</p><h1 class="nexmoe-home-cover__title">Delov&#039;s Blog</h1><h2 class="nexmoe-home-cover__subtitle">记录逆向，开发与日常笔记</h2><p class="nexmoe-home-cover__description"> </p><div class="nexmoe-home-cover__actions"><a class="nexmoe-home-cover__button nexmoe-home-cover__button--primary toc-link" href="#nexmoe-home-main">查看文章</a><a class="nexmoe-home-cover__button nexmoe-home-cover__button--secondary" href="/about/">关于本站</a></div></div><a class="nexmoe-home-cover__scroll toc-link" href="#nexmoe-home-main" aria-label="Scroll to posts"><span class="nexmoe-home-cover__scroll-text">Explore</span><span class="nexmoe-home-cover__scroll-arrow"></span></a></div></section><section class="nexmoe-posts" id="nexmoe-home-main">
-    <div class="nexmoe-post">
-        <a href="/2026/06/08/ireader-remove-splash-ad-8-7-5-2/">
-            
-                <div class="nexmoe-post-cover mdui-ripple"> 
-                    <img src="/images/home-cover.jpg" alt="某阅去除开屏广告（版本8.7.5.2）" loading="lazy">
-                    <h1>某阅去除开屏广告（版本8.7.5.2）</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta">
+</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
+  <article>
+    
+        <div class="nexmoe-post-cover"> 
+            <img src="/images/home-cover.jpg" alt="某阅去除开屏广告（版本8.7.5.2）" loading="lazy">
+            <h1>某阅去除开屏广告（版本8.7.5.2）</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
     <div class="nexmoe-rainbow">
         <a class="nexmoefont icon-calendar-fill">2026年06月08日</a>
         
@@ -238,46 +240,49 @@
     
 </div>
 
-        <article>
-            
-        </article>
-    </div>
+    <p>#gpt辅助分析代码</p>
+<h3 id="1-先删除广告文件"><a href="#1-先删除广告文件" class="headerlink" title="1.先删除广告文件"></a>1.先删除广告文件</h3><p>删除okhttp3等相关广告文件</p>
+<h3 id="2-定位加载广告的页面"><a href="#2-定位加载广告的页面" class="headerlink" title="2.定位加载广告的页面"></a>2.定位加载广告的页面</h3><p>先使用MT管理器的Acitivity记录功能，打开软件捕捉到启动页面为com.chaozh.iReader.ui.activity.WelcomeActivity，MT定位搜索，这个apk不能用替换加载界面的方法，替换之后广告确实去掉了但是开屏就是黑屏，也不是设置的广告的加载时间而是根据判断决定是否走广告开屏流程。关键代码在onCreate()函数里面，有两个分支，一个分支是走开屏广告，另一个分支不走，可以直接修改判断条件，是程序只走false分支</p>
+<h3 id="3-修改方法"><a href="#3-修改方法" class="headerlink" title="3.修改方法"></a>3.修改方法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const/4 v3, 0x0</span><br><span class="line">iput-boolean v3, p0, Lcom/chaozh/iReader/ui/activity/WelcomeActivity;-&gt;w:Z</span><br></pre></td></tr></table></figure>
+<p>把广告寄存器v3强制置0</p>
 
-    <div class="nexmoe-post">
-        <a href="/2026/05/26/xposed-hook-api/">
-            
-                <div class="nexmoe-post-cover mdui-ripple"> 
-                    <img src="/images/home-cover.jpg" alt="Xposed Hook常用API" loading="lazy">
-                    <h1>Xposed Hook常用API</h1>
-                </div>
-            
-        </a>
+    
+  </article>
 
-        <div class="nexmoe-post-meta">
-    <div class="nexmoe-rainbow">
-        <a class="nexmoefont icon-calendar-fill">2026年05月26日</a>
-        
-            <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91/">安卓逆向</a>
-        
-        
-    </div>
+  
+      
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
     
-    
-    
-    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Android/" rel="tag">Android</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%8E%BB%E5%B9%BF%E5%91%8A/" rel="tag">去广告</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E9%80%86%E5%90%91/" rel="tag">逆向</a>
     
 </div>
+  
+  
+    <script async src="/js/copy-codeblock.js?v=1780925509881"></script>
+  
 
-        <article>
-            
-        </article>
-    </div>
-</section> </div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+  
+      <div class="nexmoe-post-footer">
+          
+      </div>
+  
+</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
         <div class="nexmoe-tool">
 
             
 
             
+            
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-i-catalog"></i>
+                <div class="nexmoe-toc">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%88%E5%88%A0%E9%99%A4%E5%B9%BF%E5%91%8A%E6%96%87%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">1.先删除广告文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%9A%E4%BD%8D%E5%8A%A0%E8%BD%BD%E5%B9%BF%E5%91%8A%E7%9A%84%E9%A1%B5%E9%9D%A2"><span class="toc-number">2.</span> <span class="toc-text">2.定位加载广告的页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">3.修改方法</span></a></li></ol>
+                </div>
+            </button>
             
 
             
