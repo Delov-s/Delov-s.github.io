@@ -47,7 +47,7 @@ comment:
 
 display_index_top:
   text: "记录逆向 · 开发 · 日常笔记"
-  avatar: ""
+  avatar: "https://github.com/Delov-s.png"
 
 mdui:
   css: /css/mdui_2.0.3/mdui.css
