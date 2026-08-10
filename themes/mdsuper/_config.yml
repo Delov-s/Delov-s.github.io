@@ -1,0 +1,58 @@
+theme:
+  colorScheme: "#4fd8eb"
+  layout: auto
+
+favicon: /favicon.svg
+
+drawer:
+  always_open: true
+  menu:
+    首页:
+      icon: home
+      url: /
+      home: true
+    分类:
+      icon: folder
+      url: /categories
+    标签:
+      icon: bookmark
+      url: /tags
+    归档:
+      icon: archive
+      url: /archives
+    关于:
+      icon: info
+      url: /about
+
+copyright: "© 2026 Delov"
+
+comment:
+  system: none
+  gitalk:
+    cdn:
+      css: /css/gitalk.css
+      js: /js/gitalk.min.js
+    clientID: ""
+    clientSecret: ""
+    repo: ""
+    owner: ""
+    admin: []
+    id: decodeURIComponent(location.pathname)
+    distractionFreeMode: false
+  waline:
+    cdn:
+      css: /css/waline.css
+      js: /js/waline.js
+    serverURL: ""
+
+display_index_top:
+  text: "记录逆向 · 开发 · 日常笔记"
+  avatar: ""
+
+mdui:
+  css: /css/mdui_2.0.3/mdui.css
+  js: /css/mdui_2.0.3/mdui.global.js
+
+search:
+  enable: true
+  xml: /search.xml

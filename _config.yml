@@ -5,7 +5,7 @@
 # Site
 title: Delov's Blog
 subtitle: Delov-s.github.io
-description: 记录逆向，开发与日常笔记
+description: 记录逆向、开发与日常笔记
 keywords: Delov, Hexo, Blog
 author: Delov
 language: zh-CN
@@ -43,9 +43,10 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
+syntax_highlighter: prismjs
 highlight:
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
@@ -84,7 +85,13 @@ exclude:
 ignore:
 
 # Extensions
-theme: nexmoe
+theme: mdsuper
+
+# Search
+search:
+  path: search.xml
+  field: post
+  content: true
 
 # Deployment
 deploy:
