@@ -2,6 +2,37 @@
 <search> 
   
   
+    
+    <entry>
+      <title>网鼎杯2020 bang 复现</title>
+      <link href="/2026/08/09/%E7%BD%91%E9%BC%8E%E6%9D%AF2020-bang/"/>
+      <url>/2026/08/09/%E7%BD%91%E9%BC%8E%E6%9D%AF2020-bang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="网鼎杯bang复现"><a href="#网鼎杯bang复现" class="headerlink" title="网鼎杯bang复现"></a>网鼎杯bang复现</h1><blockquote><p>题目是一个安卓逆向脱壳，壳类型为梆梆加固免费版</p><p>[^题目有点老了，因为我最近在学习脱壳，拿来练一下]: </p></blockquote><h2 id="1-查壳"><a href="#1-查壳" class="headerlink" title="1.查壳"></a>1.查壳</h2><h3 id="脚本查壳"><a href="#脚本查壳" class="headerlink" title="脚本查壳"></a>脚本查壳</h3><p><code>GitHub</code>地址：<a href="">project.ctf.awd.1910.py&#x2F;src&#x2F;Tools&#x2F;Andriod&#x2F;detect_shell_name&#x2F;detect_shell_name.py at master · serfend&#x2F;project.ctf.awd.1910.py</a></p><p>直接<code>cmd</code>运行即可</p><pre class="line-numbers language-none"><code class="language-none">python detect_shell_name.py apk路径<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>效果如图：<img src="/images/wangdingbei-2020/image-20260809214507457.png" alt="image-20260809214507457"></p><h3 id="PKID查壳"><a href="#PKID查壳" class="headerlink" title="PKID查壳"></a><code>PKID</code>查壳</h3><p><code>cmd</code>运行：</p><pre class="line-numbers language-none"><code class="language-none">java -jar E:\andro tools\壳检测工具\ApkScan-PKID查壳工具<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>效果如图：</p><p><img src="/images/wangdingbei-2020/image-20260809214821565.png" alt="image-20260809214821565"></p><h1 id="2-脱壳"><a href="#2-脱壳" class="headerlink" title="2.脱壳"></a>2.脱壳</h1><blockquote><p>使用<code>frida-dexdump</code>脱壳，我这里使用的<code>frida</code>版本是14.2.18，<code>frida</code>16版本的我没有运行成功，在启动<code>frida-dexdump</code>的时候就直接直接卡住了</p></blockquote><p>启动server端，运行对应的apk</p><pre class="line-numbers language-none"><code class="language-none">指定App的应用包名：frida-dexdump -U -f com.example.how_debug<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/images/wangdingbei-2020/image-20260809215438991.png" alt="image-20260809215438991"></p><p>然后会得到两个<code>dex</code>文件，直接一起选中拖到jadx-gui里面就可以查看源码，然后得到flag</p><pre class="line-numbers language-none"><code class="language-none">flag&#123;borring_things&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/images/wangdingbei-2020/image-20260809215725460.png" alt="image-20260809215725460"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CTF </tag>
+            
+            <tag> 安卓逆向 </tag>
+            
+            <tag> Frida </tag>
+            
+            <tag> 脱壳 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
