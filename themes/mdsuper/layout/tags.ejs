@@ -1,9 +1,4 @@
 <!-- <div class="mdui-row-sm-3 mdui-row-xs-1"> -->
-<%if(theme.display_index_top.avatar){%>
-<div style="text-align: center;padding-top: 8px;">
-    <mdui-avatar fit="contain" src="<%=theme.display_index_top.avatar%>" style="width: 96px;height: 96px;"></mdui-avatar>
-</div>
-<%}%>
 <% site.tags.each(function (tag) { %>
     <!-- <div class="mdui-col"> -->
     <mdui-card clickable href="<%- url_for(tag.path) %>" variant="filled" style="padding: 8px;width: 32%;">
