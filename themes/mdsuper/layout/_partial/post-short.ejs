@@ -1,4 +1,4 @@
-<mdui-card clickable variant="filled" href="<%- url_for(post.path) %>" 
+<mdui-card clickable variant="filled" href="<%- url_for(post.path) %>"
     style="width:100%;">
     <%if(post.cover){%>
     <div style="width: 100%;height: 128px;background-repeat: no-repeat;background-size: cover;background-position: center;background-image: url(<%-post.cover%>);">
@@ -15,23 +15,24 @@
                 <%= full_date(post.updated) %>
         </span>
         <br>
-        <%if(post.categories){%><span><%=__("category")%> <% post.categories.each(function (cate) { %>
-                    <!-- <mdui-chip href="<%- url_for(cate.path) %>" variant="filter" style="vertical-align: middle;">
-                        <%= cate.name %>
-                    </mdui-chip> -->
+        <%
+            const postCategories = post.categories ? (typeof post.categories.toArray === 'function' ? post.categories.toArray() : (Array.isArray(post.categories) ? post.categories : [])) : [];
+            const postTags = post.tags ? (typeof post.tags.toArray === 'function' ? post.tags.toArray() : (Array.isArray(post.tags) ? post.tags : [])) : [];
+        %>
+        <%if(postCategories.length){%><span><%=__("category")%> <% postCategories.forEach(function (cate) { %>
                     <a href="<%- url_for(cate.path) %>">
                         <%= cate.name %>
                     </a>
                     <% }); %>
             </span>
             <%}%>
-                <%if(post.tags){%><span>| <%=__("tag")%> <% post.tags.each(function (tag) { %>
+                <%if(postTags.length){%><span>| <%=__("tag")%> <% postTags.forEach(function (tag) { %>
                         <a href="<%- url_for(tag.path) %>" variant="filter">
                             <%= tag.name %>
                         </a>
                         <% }); %></span>
                             <% }%>
-        
+
                 <p>
                     <%if(post.excerpt){%>
                         <%= strip_html(post.excerpt) %>
@@ -41,3 +42,4 @@
                 </p>
     </div>
 </mdui-card>
+

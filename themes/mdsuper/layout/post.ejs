@@ -10,12 +10,13 @@
         <%= full_date(page.updated) %>
     </span>
     <br>
-    <%if(page.categories){%><span>
+    <%
+      const pageCategories = page.categories ? (typeof page.categories.toArray === 'function' ? page.categories.toArray() : (Array.isArray(page.categories) ? page.categories : [])) : [];
+      const pageTags = page.tags ? (typeof page.tags.toArray === 'function' ? page.tags.toArray() : (Array.isArray(page.tags) ? page.tags : [])) : [];
+    %>
+    <%if(pageCategories.length){%><span>
         <%=__("category")%>
-          <% page.categories.each(function (cate) { %>
-            <!-- <mdui-chip href="<%= url_for(cate.path) %>" variant="filter" style="vertical-align: middle;">
-                          <%= cate.name %>
-                      </mdui-chip> -->
+          <% pageCategories.forEach(function (cate) { %>
             <a href="<%= url_for(cate.path) %>">
               <%= cate.name %>
             </a>
@@ -23,9 +24,9 @@
               <br>
       </span>
       <%}%>
-        <%if(page.tags){%>
+        <%if(pageTags.length){%>
           <%=__("tag")%>
-            <% page.tags.each(function (tag) { %>
+            <% pageTags.forEach(function (tag) { %>
               <a href="<%= url_for(tag.path) %>">
                 <%= tag.name %>
               </a>
@@ -73,3 +74,4 @@
   <%}%>
 </script>
 <%- partial("_partial/comments")%>
+
