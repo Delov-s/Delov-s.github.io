@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Delov 的博客">
 <meta property="og:description" content="前言：创宇杯安卓逆向的一道题目，最近实战没有思路，所以来CTF找找灵感，想把基础补一下。比赛的那天学校调休满课，然后没打，看别人说挺有意思的，然后来做一下，还有一个WebPortal_1.0后面有时间再做一下，其他的好像都是动态环境，就没下载了。说实话已经很久没有体会过逆向的快乐了，平时比赛都是ai一把梭，这次主要是给ai提供思路，让它给我写脚本。  相关函数解释： AAssetManager_o">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="d:\A\Document\png\image-20261009194246193.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194246193.png">
 <meta property="og:image" content="d:\A\Document\png\image-20261009194837232.png">
 <meta property="og:image" content="d:\A\Document\png\image-20261009194847206.png">
 <meta property="og:image" content="d:\A\Document\png\image-20261009204521218.png">
@@ -37,11 +37,11 @@
 <meta property="og:image" content="d:\A\Document\png\image-20261011161042168.png">
 <meta property="og:image" content="d:\A\Document\png\image-20261011165838162.png">
 <meta property="article:published_time" content="2026-10-11T09:28:00.000Z">
-<meta property="article:modified_time" content="2026-10-11T09:37:33.160Z">
+<meta property="article:modified_time" content="2026-10-11T09:46:27.656Z">
 <meta property="article:author" content="Delov">
 <meta property="article:tag" content="Delov, Hexo, Blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="d:\A\Document\png\image-20261009194246193.png">
+<meta name="twitter:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194246193.png">
       <link rel="icon" href="/favicon.svg">
       <title>
         
@@ -171,7 +171,7 @@
       <mdui-icon name="date_range" style="vertical-align: text-bottom;font-size: 18px;"></mdui-icon>
       2026-10-11 17:28:00 &nbsp; <mdui-icon name="update"
           style="vertical-align: text-bottom;font-size: 18px;"></mdui-icon>
-        2026-10-11 17:37:33
+        2026-10-11 17:46:27
     </span>
     <br>
     
@@ -201,7 +201,7 @@
     void*       fnPtr;     &#x2F;&#x2F; 对应的 Native 函数指针（真正干活的函数地址）
 &#125; JNINativeMethod;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
 <h2 id="1-Java层"><a href="#1-Java层" class="headerlink" title="1.Java层"></a>1.<code>Java</code>层</h2><p><code>jadx-gui</code>反编译，<code>Java</code>层代码很简单，主要逻辑在<code>so</code>层，有几个函数<code>attachBaseContext</code>,<code>onCreate</code></p>
-<h2 id="2-so层分析"><a href="#2-so层分析" class="headerlink" title="2.so层分析"></a>2.<code>so</code>层分析</h2><h3 id="attachBaseContext分析"><a href="#attachBaseContext分析" class="headerlink" title="attachBaseContext分析"></a><code>attachBaseContext</code>分析</h3><p><img src="D:\A\Document\png\image-20261009194246193.png" alt="image-20261009194246193"></p>
+<h2 id="2-so层分析"><a href="#2-so层分析" class="headerlink" title="2.so层分析"></a>2.<code>so</code>层分析</h2><h3 id="attachBaseContext分析"><a href="#attachBaseContext分析" class="headerlink" title="attachBaseContext分析"></a><code>attachBaseContext</code>分析</h3><p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194246193.png" alt="image-20261009194246193"></p>
 <p>代码看着很乱，应该是使用了自定义虚表偏移，在<code>ida</code>中恢复<code>JNIEnv</code>类型</p>
 <p><img src="D:\A\Document\png\image-20261009194837232.png" alt="image-20261009194837232"></p>
 <p><img src="D:\A\Document\png\image-20261009194847206.png" alt="image-20261009194847206"></p>
