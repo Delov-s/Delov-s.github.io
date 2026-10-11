@@ -15,29 +15,29 @@
 <meta property="og:description" content="前言：创宇杯安卓逆向的一道题目，最近实战没有思路，所以来CTF找找灵感，想把基础补一下。比赛的那天学校调休满课，然后没打，看别人说挺有意思的，然后来做一下，还有一个WebPortal_1.0后面有时间再做一下，其他的好像都是动态环境，就没下载了。说实话已经很久没有体会过逆向的快乐了，平时比赛都是ai一把梭，这次主要是给ai提供思路，让它给我写脚本。  相关函数解释： AAssetManager_o">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194246193.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261009194837232.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261009194847206.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261009204521218.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261009204555340.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261009205254657.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261009205311288.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011144152192.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011144439496.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011144457288.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011144508559.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011144520831.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011144536510.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011144802242.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011145113956.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011145124904.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011153037481.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011153102713.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011153250870.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011160549128.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011161042168.png">
-<meta property="og:image" content="d:\A\Document\png\image-20261011165838162.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194837232.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194847206.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009204521218.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009204555340.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009205254657.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009205311288.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-image-20261011144152192.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144439496.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144457288.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144508559.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144520831.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144536510.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144802242.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011145113956.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011145124904.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011153037481.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011153102713.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011153250870.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011160549128.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011161042168.png">
+<meta property="og:image" content="https://delov-s.github.io/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011165838162.png">
 <meta property="article:published_time" content="2026-10-11T09:28:00.000Z">
-<meta property="article:modified_time" content="2026-10-11T09:48:31.850Z">
+<meta property="article:modified_time" content="2026-10-11T10:00:32.051Z">
 <meta property="article:author" content="Delov">
 <meta property="article:tag" content="Delov, Hexo, Blog">
 <meta name="twitter:card" content="summary">
@@ -171,7 +171,7 @@
       <mdui-icon name="date_range" style="vertical-align: text-bottom;font-size: 18px;"></mdui-icon>
       2026-10-11 17:28:00 &nbsp; <mdui-icon name="update"
           style="vertical-align: text-bottom;font-size: 18px;"></mdui-icon>
-        2026-10-11 17:48:31
+        2026-10-11 18:00:32
     </span>
     <br>
     
@@ -203,49 +203,49 @@
 <h2 id="1-Java层"><a href="#1-Java层" class="headerlink" title="1.Java层"></a>1.<code>Java</code>层</h2><p><code>jadx-gui</code>反编译，<code>Java</code>层代码很简单，主要逻辑在<code>so</code>层，有几个函数<code>attachBaseContext</code>,<code>onCreate</code></p>
 <h2 id="2-so层分析"><a href="#2-so层分析" class="headerlink" title="2.so层分析"></a>2.<code>so</code>层分析</h2><h3 id="attachBaseContext分析"><a href="#attachBaseContext分析" class="headerlink" title="attachBaseContext分析"></a><code>attachBaseContext</code>分析</h3><p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194246193.png" alt="image-20261009194246193"></p>
 <p>代码看着很乱，应该是使用了自定义虚表偏移，在<code>ida</code>中恢复<code>JNIEnv</code>类型</p>
-<p><img src="D:\A\Document\png\image-20261009194837232.png" alt="image-20261009194837232"></p>
-<p><img src="D:\A\Document\png\image-20261009194847206.png" alt="image-20261009194847206"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194837232.png" alt="image-20261009194837232"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009194847206.png" alt="image-20261009194847206"></p>
 <p>代码被还原了，代码主要逻辑就是调用父类方法，获取FINGERPRINT，查找是否含有<code>generic</code>，<code>vbox</code>等关键字，进行模拟器检测</p>
 <h3 id="onCreate分析"><a href="#onCreate分析" class="headerlink" title="onCreate分析"></a><code>onCreate</code>分析</h3><p>先用<code>D810</code>插件去一下混淆，有效果但是不多</p>
 <p>几个关键部分：</p>
-<p><img src="D:\A\Document\png\image-20261009204521218.png" alt="image-20261009204521218"></p>
-<p><img src="D:\A\Document\png\image-20261009204555340.png" alt="image-20261009204555340"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009204521218.png" alt="image-20261009204521218"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009204555340.png" alt="image-20261009204555340"></p>
 <blockquote>
 <p><code>/proc/self/status</code>用来展示当前进程的各种状态信息</p>
 </blockquote>
-<p><img src="D:\A\Document\png\image-20261009205254657.png" alt="image-20261009205254657"></p>
-<p><img src="D:\A\Document\png\image-20261009205311288.png" alt="image-20261009205311288"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009205254657.png" alt="image-20261009205254657"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261009205311288.png" alt="image-20261009205311288"></p>
 <blockquote>
 <p><code>hook</code>检测</p>
 </blockquote>
 <p>获取包名，然后从包名生成密钥</p>
-<p><img src="D:\A\Document\png\image-20261011144152192.png" alt="image-20261011144152192"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-image-20261011144152192.png" alt="image-20261011144152192"></p>
 <blockquote>
 <p><code>key</code>依赖包名动态生成，因此修改包名会导致后续<code>DEX</code>解密失败</p>
 </blockquote>
-<p><img src="D:\A\Document\png\image-20261011144439496.png" alt="image-20261011144439496"></p>
-<p><img src="D:\A\Document\png\image-20261011144457288.png" alt="image-20261011144457288"></p>
-<p><img src="D:\A\Document\png\image-20261011144508559.png" alt="image-20261011144508559"></p>
-<p><img src="D:\A\Document\png\image-20261011144520831.png" alt="image-20261011144520831"></p>
-<p><img src="D:\A\Document\png\image-20261011144536510.png" alt="image-20261011144536510"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144439496.png" alt="image-20261011144439496"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144457288.png" alt="image-20261011144457288"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144508559.png" alt="image-20261011144508559"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144520831.png" alt="image-20261011144520831"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144536510.png" alt="image-20261011144536510"></p>
 <p>获取当前应用签名</p>
-<p><img src="D:\A\Document\png\image-20261011144802242.png" alt="image-20261011144802242"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011144802242.png" alt="image-20261011144802242"></p>
 <p>将最终结果写入<code>n5381</code>，并检查，即当<code>n5381</code>既不等于-1220281383（原始<code>APK</code>签名对应的校验值）和0时，退出</p>
-<p><img src="D:\A\Document\png\image-20261011145113956.png" alt="image-20261011145113956"></p>
-<p><img src="D:\A\Document\png\image-20261011145124904.png" alt="image-20261011145124904"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011145113956.png" alt="image-20261011145113956"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011145124904.png" alt="image-20261011145124904"></p>
 <p>读取<code>assets</code>文件</p>
-<p><img src="D:\A\Document\png\image-20261011153037481.png" alt="image-20261011153037481"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011153037481.png" alt="image-20261011153037481"></p>
 <p>解密逻辑，最后操作为循环右移两位</p>
-<p><img src="D:\A\Document\png\image-20261011153102713.png" alt="image-20261011153102713"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011153102713.png" alt="image-20261011153102713"></p>
 <p>然后检查文件头</p>
-<p><img src="D:\A\Document\png\image-20261011153250870.png" alt="image-20261011153250870"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011153250870.png" alt="image-20261011153250870"></p>
 <p>这部分其实是一个经过轻量自定义加密的<code>DEX</code>文件</p>
 <p>往后看还有一个<code>sub_3F0C</code>函数，简单来说就是传入路径字符串拼接<code>/real.dex</code>并返回，后面就是一些删除操作。</p>
 <p>再看一下几个<code>case</code>，中间有<code>getClassLoader</code>函数，而且还使用了<code>DexClassLoader</code>,加载类<code>com.xiaoyuyc.mobile2.CoreApplication</code></p>
-<p><img src="D:\A\Document\png\image-20261011160549128.png" alt="image-20261011160549128"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011160549128.png" alt="image-20261011160549128"></p>
 <p>中间还创建了一个文件，后面又被清理了，但是只覆盖了前16字节</p>
 <p>然后加载<code>com.xiaoyuyc.mobile2.modules.VerificationCenter</code>,调用<code>RegisterNatives</code>，包含<code>checkFlag</code>和<code>sub_3DB0</code>函数</p>
-<p><img src="D:\A\Document\png\image-20261011161042168.png" alt="image-20261011161042168"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011161042168.png" alt="image-20261011161042168"></p>
 <p><code>sub_3DB0</code>是一个校验函数，与目标数组比较，相同返回1，不同返回0</p>
 <p>所以整体逻辑就是：父类初始化，反调试等，根据包名生成解密密钥，校验<code>APK</code>签名，从<code>assets/init_res</code>解密真实 <code>DEX</code>，<code>DexClassLoader</code>加载 <code>CoreApplication</code>，注册<code>VerificationCenter.checkFlag</code>的<code>Native</code>实现。</p>
 <h2 id="3-解题思路"><a href="#3-解题思路" class="headerlink" title="3.解题思路"></a>3.解题思路</h2><p>从 <code>APK</code> 中提取 <code>assets/init_res</code>，按<code>native</code>解密逻辑还原<code>DEX</code>，运行<code>exp</code>还原出真正的<code>dex</code>。</p>
@@ -360,7 +360,7 @@ def main():
 if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
     main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="D:\A\Document\png\image-20261011165838162.png" alt="image-20261011165838162"></p>
+<p><img src="/images/%E8%8C%A7%E4%B8%AD%E4%BA%BA_1.0/image-20261011165838162.png" alt="image-20261011165838162"></p>
 <p><code>sub_3DB0</code>是关键函数，<code>CIPHER_BLOCK</code> 转成无符号字节，要求<code>n5381</code>&#x3D;&#x3D; -1220281383,检测时只使用低八位</p>
 <p><code>exp</code>:</p>
 <pre class="line-numbers language-none"><code class="language-none">def rol8(value, count):
